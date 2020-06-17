@@ -1,8 +1,8 @@
 {
 	"noindex": true,
 	"icon": "fa-redhat",
-	"title": "OpenAPI Generator",
-	"description": "Introduction to code generation with OpenAPI Generator",
+	"title": "OpenAPI Security",
+	"description": "Introduction Security in OpenAPI",
 	"details": {
 		"steps": [{
 				"title": "",
@@ -40,10 +40,6 @@
 			{
 				"title": "Regenerate Code on maven builds",
 				"text": "step9.md"
-			},
-			{
-				"title": "Wrap Up",
-				"text": "step10.md"
 			}
 		]
 	},
