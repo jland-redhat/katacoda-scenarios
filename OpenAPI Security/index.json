@@ -39,15 +39,15 @@
 			}
 		],
 		"intro": {
-		  "text":"intro.md"
+		  "text":"intro.md",
+		  "courseData":"background.sh"
 		}, "finish": {
 		  "text": "finish.md"
 		}
 	},
 	"environment": {
-		"hideintro": true,
-		"uieditorpath": "/root/example",
 		"showide": true,
+		"uiLayoutId": "editor-terminal",
 		"idePort": 23000,
 		"dashboards": [{
 			"name": "Swagger UI",
@@ -57,7 +57,7 @@
 		"uilayout": "terminal-iframe"
 	},
 	"backend": {
-		"imageid": "ubuntu",
+		"imageid": "centos_backend",
 		"port": 8080
 	}
 }
