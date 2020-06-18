@@ -36,10 +36,6 @@
 			{
 				"title": "Implement the TodoApi.java",
 				"text": "step8.md"
-			},
-			{
-				"title": "Regenerate Code on maven builds",
-				"text": "step9.md"
 			}
 		],
 		"intro": {
