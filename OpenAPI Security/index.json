@@ -2,6 +2,7 @@
 	"noindex": true,
 	"icon": "fa-redhat",
 	"title": "OpenAPI Security",
+	"time": "15 minutes",
 	"description": "Introduction Security in OpenAPI",
 	"details": {
 		"steps": [{
@@ -57,7 +58,7 @@
 		"uilayout": "terminal-iframe"
 	},
 	"backend": {
-		"imageid": "centos_backend",
+		"imageid": "centos",
 		"port": 8080
 	}
 }
