@@ -49,7 +49,7 @@
 	"environment": {
 		"showide": true,
 		"uiLayoutId": "editor-terminal",
-		"uieditorpath": "/root/rhc_openapi_todo"
+		"uieditorpath": "/root/rhc_openapi_todo",
 		"idePort": 23000,
 		"dashboards": [{
 			"name": "Swagger UI",
