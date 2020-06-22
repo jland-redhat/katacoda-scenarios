@@ -13,6 +13,7 @@ curl https://downloads.jboss.org/keycloak/7.0.0/keycloak-7.0.0.zip --output keyc
 unzip keycloak-7.0.0.zip
 cd keycloak-7.0.0/bin
 ./add-user-keycloak.sh -r master -u admin -p admin
+./standalone.sh -b 0.0.0.0 &
 
 cd ~/rhc_openapi_todo
 
