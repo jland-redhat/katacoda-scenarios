@@ -55,7 +55,10 @@
 			"href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/v1/todos"
 		},{
 			"name": "KeyCloak",
-			"href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/"
+			"href": "https://[[HOST_SUBDOMAIN]]-8444-[[KATACODA_HOST]].environments.katacoda.com/"
+		},{
+			"name": "KeyCloak Unsecure",
+			"href": "https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/"
 		}],
 
 		"uilayout": "terminal-iframe"
