@@ -81,5 +81,6 @@ Types of securitySchemes:
       - Discovery endpoint at ".well-known/openid-configuration" that describes the configuration of the oAuth flow
    - Response includes an ID Token that includes some personal information about the user.
    
-   <sub>Note: Keycloak takes a while to download. You can complete up to step 4 before it is completely up and running</sub>
+   
+ <sub>Note: Keycloak takes a while to download. You can complete up to step 4 before it is completely up and running</sub>
 

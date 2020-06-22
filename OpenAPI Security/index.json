@@ -7,28 +7,31 @@
 	"description": "Introduction Security in OpenAPI",
 	"details": {
 		"steps": [{
-				"title": "",
-				"text": "step1.md",
+				"title": "Setup",
+				"text": "setup.md",
 		    "code":"background.sh"
+			},{
+				"title": "Intro to Security Types",
+				"text": "step1.md"
 			},
 			{
-				"title": "Install OpenAPI Generator",
+				"title": "Security Requirements Intro",
 				"text": "step2.md"
 			},
 			{
-				"title": "Download OpenAPI Specification File",
+				"title": "Update OpenAPI Spec",
 				"text": "step3.md"
 			},
 			{
-				"title": "View OpenAPI Generator Documentation (Optional)",
+				"title": "Setup Security Realm",
 				"text": "step4.md"
 			},
 			{
-				"title": "Generate Spring Boot Application",
+				"title": "Code Walkthrough",
 				"text": "step5.md"
 			},
 			{
-				"title": "POM Updates",
+				"title": "Validate oAuth",
 				"text": "step6.md"
 			}
 		],
