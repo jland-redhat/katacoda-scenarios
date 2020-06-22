@@ -3,12 +3,13 @@
 	"icon": "fa-redhat",
 	"title": "OpenAPI Security",
 	"time": "15 minutes",
-	"difficulty": "2",
+	"difficulty": "Beginner",
 	"description": "Introduction Security in OpenAPI",
 	"details": {
 		"steps": [{
 				"title": "",
-				"text": "step1.md"
+				"text": "step1.md",
+		    "code":"background.sh"
 			},
 			{
 				"title": "Install OpenAPI Generator",
@@ -33,8 +34,7 @@
 		],
 		"intro": {
 		  "title": "OpenAPI Security",
-		  "text":"intro.md",
-		  "background":"background.sh"
+		  "text":"intro.md"
 		}, "finish": {
 		  "text": "finish.md"
 		}
