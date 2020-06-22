@@ -1,6 +1,6 @@
 Setup Keycloak:
 
-v2
+v3
 ```
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/ 
 export JAVA_HOME 

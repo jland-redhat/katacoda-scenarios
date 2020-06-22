@@ -5,7 +5,7 @@ First we need to add our security scheme changes to the OpenAPI Specification do
 1. Add an OpenAPI Connect Security Scheme
     - Add the following at the "component" level of the `todo.yaml`
 
-    <pre class="file" data-filename="todo.yaml" data-target="insert" data-marker="#TODO: Add Security Scheme">
+    <pre class="file" data-filename="todo.yaml" data-target="replace" data-marker="#TODO: Add Security Scheme">
     securitySchemes:
         todo-security:
             openIdConnectUrl: 'http://localhost:8081/auth'
@@ -13,7 +13,7 @@ First we need to add our security scheme changes to the OpenAPI Specification do
     </pre>
     - Add global Security Requirements
       - Add the following at the application level
-    <pre class="file" data-filename="todo.yaml" data-target="insert" data-marker="#TODO: Add Security Scheme">
+    <pre class="file" data-filename="todo.yaml" data-target="replace" data-marker="#TODO: Add Security Scheme">
     security:
       -
         todo-security: []
