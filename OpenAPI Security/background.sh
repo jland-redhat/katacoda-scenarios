@@ -7,7 +7,7 @@ cd rhc_openapi_todo
 git checkout security
 
 
-docker run -d -p 8081:8443 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e DB_VENDOR=H2  jboss/keycloak
+docker run -d -p 8443:8443 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -e DB_VENDOR=H2  jboss/keycloak
 
 
 clear
