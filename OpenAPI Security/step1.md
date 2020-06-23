@@ -20,6 +20,7 @@ Types of securitySchemes:
       - Any other schema defined by [RFC 7235](https://tools.ietf.org/html/rfc7235) and [HTTP Authentication Scheme Registry](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml)
       
     Example:
+    
     ```yaml
     securitySchemes:
       my_http_security_schema:
@@ -34,6 +35,7 @@ Types of securitySchemes:
       - cookie
       
     Example:
+    
     ```yaml
     securitySchemes:
       my_api_security_schema:
@@ -41,6 +43,7 @@ Types of securitySchemes:
           name: key
           in: header
     ```
+    
   - [oAuth 2](https://swagger.io/docs/specification/authentication/oauth2/): An api protocol that gives api client limited access to user's data on a separte web server
     - Uses a flow based approache which involves retrieving user info from a seprate resource server after the user allows client api access to some or all of that user's data
     - Flows:
@@ -76,6 +79,7 @@ Types of securitySchemes:
               read_acces: read data
               write_access: modify data
     ```
+    
   - [OpenId Connect](https://swagger.io/docs/specification/authentication/openid-connect-discovery/): An identitiy layer built on top of the oAuth 2 flow:
     - "openIdConnectUrl"
       - Discovery endpoint at ".well-known/openid-configuration" that describes the configuration of the oAuth flow

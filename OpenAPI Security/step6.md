@@ -7,7 +7,7 @@ Validate
   ```sh
   mvn spring-boot:run
   ```{{ execute }}
-2. Navigate to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/swagger-ui.html`
+2. Navigate to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/swagger-ui.html
 3. Note you should see an open padlock symbol on all of the endpoints you have secured
 4. Attempt to hit the `/todos` endpoint through the swagger page
   - Will return a "TypeError: Failed to fetch" error
@@ -29,7 +29,7 @@ Validate
       - Add the "write_access" role from the roles tab
       - Refresh your *authorization token*
         - Restart spring-boot application
-        - Navigate to "http://localhost:8080/v1/todos" in a new browser window
+        - Navigate to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/v1/todos in a new browser window
 7. Expore OpeniD Connect's Identity Layer
   - Run the "/user/details" endpoint in the OpenAPI controller
     ```json
