@@ -51,9 +51,6 @@
 			"name": "Swagger UI",
 			"href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/swagger-ui.html"
 		},{
-			"name": "Todos Endpoint",
-			"href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/v1/todos"
-		},{
 			"name": "KeyCloak",
 			"href": "https://[[HOST_SUBDOMAIN]]-8444-[[KATACODA_HOST]].environments.katacoda.com/"
 		},{

@@ -2,7 +2,8 @@
 
 The changes made in order to allow the spring-boot application to connect to keycloak have already been made. But lets quickly walk through them. If you would like to find out more information about this dependency or how to hook it up to spring security [here](https://www.baeldung.com/spring-boot-keycloak) is a link to a tutorial for doing just that.
 
-1.  Inside the `pom.xml`{{open}} we added the following dependency
+1.  Inside the `pom.xml` we added the following dependency
+
   ```xml
   <!--Keycloak Dependency-->
   <dependency>
@@ -12,7 +13,8 @@ The changes made in order to allow the spring-boot application to connect to key
   </dependency>
   </dependencies>
   ```
-2. We have added the following to `src/main/resources/application.properties`{{open}}
+  
+2. We have added the following to `src/main/resources/application.properties`
   - Basic properties for connecting to the realm:
     ```properties
     #Keycloak Properties

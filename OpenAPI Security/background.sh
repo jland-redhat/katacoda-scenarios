@@ -4,6 +4,6 @@ export JAVA_HOME
 
 git clone https://github.com/jland-redhat/rhc_openapi_todo.git
 cd rhc_openapi_todo
-git checkout security
+git checkout security_katacoda
 
 clear
