@@ -1,20 +1,8 @@
-## Add Maven Plugin to the pom.xml
+### Run Check and View Dependency Check Report
 
-Copy:
-    ```
-    <!-- OWASP Dependency Check -->
-    <plugin>
-        <groupId>org.owasp</groupId>
-        <artifactId>dependency-check-maven</artifactId>
-        <version>5.3.2</version>
-        <executions>
-            <execution>
-                <goals>
-                    <goal>check</goal>
-                </goals>
-            </execution>
-        </executions>
-      </plugin>
-    ```{{copy}}
-    
-Add to plugin section of `pom.xml`{{open}}
+Run the Dependency Check with `mvn verify`{{execute}}
+<sub>Note: The plugin will need to download and process multiple CVE databases on the first run, so This make take a while initially.</sub>
+
+View the report at https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+

@@ -1,21 +1,21 @@
 {
 	"noindex": true,
 	"icon": "fa-redhat",
-	"title": "OpenAPI Security",
+	"title": "OWASP Dependency Check",
 	"time": "15 minutes",
 	"difficulty": "Beginner",
-	"description": "Introduction Security in OpenAPI",
+	"description": "Introduction OWASP Dependency Check",
 	"details": {
 		"steps": [{
 				"title": "Setup",
 				"text": "setup.md",
 		    "code":"background.sh"
 			},{
-				"title": "Intro to Security Types",
+				"title": "Add Plugin to Maven Project",
 				"text": "step1.md"
 			},
 			{
-				"title": "Security Requirements Intro",
+				"title": "Run and View Report",
 				"text": "step2.md"
 			},
 			{

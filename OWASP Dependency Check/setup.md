@@ -1,3 +1,10 @@
-## Setup
+#### Download OWASP Dependency Check Branch:
 
-Note: It may take a few minutes to install and start ZAP and Juice Shop. First couple steps are informational and can be browsed before the installation is completed.
+
+  - `cd labs`{{execute}}
+
+  - `git clone https://github.com/jland-redhat/rhc_openapi_todo.git`{{execute}}
+
+  - `cd rhc_openapi_todo`{{execute}}
+
+  - `git checkout owasp_dependency`{{execute}}
