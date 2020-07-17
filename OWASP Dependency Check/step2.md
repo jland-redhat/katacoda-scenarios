@@ -5,4 +5,4 @@ Run the Dependency Check with `mvn verify`{{execute}}
 
 View the report at https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-
+  

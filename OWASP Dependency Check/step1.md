@@ -1,7 +1,7 @@
 ## Add Maven Plugin to the pom.xml
 
 Copy:
-    ```
+    `
     <!-- OWASP Dependency Check -->
     <plugin>
         <groupId>org.owasp</groupId>
@@ -15,6 +15,6 @@ Copy:
             </execution>
         </executions>
       </plugin>
-    ```{{copy}}
+    `{{copy}}
     
 Add to plugin section of `pom.xml`{{open}}
