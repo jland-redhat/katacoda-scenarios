@@ -40,6 +40,9 @@
 	},
 	"environment": {
 		"uilayout": "vscode-terminal-split",
+		"showide": true,
+		"uieditorpath": "/root/rhc_openapi_todo",
+		"idePort": 23000,
 		"dashboards": [{
 			"name": "Dependency Check Rreport",
 			"href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/dependency-check-report.html"

@@ -13,9 +13,9 @@ Let's suppress `CVE-2018-1000632` for `dom4j-1.6.1.jar`
       <configuration>
         <suppressionFile>owasp-suppressions.xml</suppressionFile>
       </configuration>
-      `{copy}
+      `{{copy}}
       
       <sub><suppressionFile> can be a local path, an absolute path, or a url location<sub>
- - Rerun `mvn verify`{execute} and validate that `CVE-2018-1000632` is no longer being recorded.
+ - Rerun `mvn verify`{{execute}} and validate that `CVE-2018-1000632` is no longer being recorded.
  - (Optional) Suppress some of the other CVEs on the page by adding the suppression clips to our XML document
   
