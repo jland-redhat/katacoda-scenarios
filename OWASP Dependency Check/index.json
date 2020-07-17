@@ -39,7 +39,7 @@
 		}
 	},
 	"environment": {
-		"uilayout": "vscode-terminal-split",
+		"uilayout": "terminal",
 		"showide": true,
 		"uieditorpath": "/root/rhc_openapi_todo",
 		"idePort": 23000,
