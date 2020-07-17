@@ -2,7 +2,7 @@
 	"noindex": true,
 	"icon": "fa-redhat",
 	"title": "OWASP Dependency Check",
-	"time": "15 minutes",
+	"time": "10 minutes",
 	"difficulty": "Beginner",
 	"description": "Introduction OWASP Dependency Check",
 	"details": {
@@ -15,47 +15,35 @@
 				"text": "step1.md"
 			},
 			{
-				"title": "Run and View Report",
+				"title": "Run Check and View Dependency Check Report",
 				"text": "step2.md"
 			},
 			{
-				"title": "Update OpenAPI Spec",
+				"title": "Fix a vulnerability",
 				"text": "step3.md"
 			},
 			{
-				"title": "Setup Security Realm",
+				"title": "Identifying False Positives and Irrelevant Depedencies",
 				"text": "step4.md"
 			},
 			{
-				"title": "Code Walkthrough",
+				"title": "Suppressing Report Vulnerability",
 				"text": "step5.md"
-			},
-			{
-				"title": "Validate oAuth",
-				"text": "step6.md"
 			}
 		],
 		"intro": {
-		  "title": "OpenAPI Security",
+		  "title": "OWASP Dependency Check",
 		  "text":"intro.md"
 		}, "finish": {
 		  "text": "finish.md"
 		}
 	},
 	"environment": {
-		"showide": true,
-		"uiLayoutId": "editor-terminal",
-		"uieditorpath": "/root/rhc_openapi_todo",
-		"idePort": 23000,
+		"uilayout": "vscode-terminal-split",
 		"dashboards": [{
-			"name": "Swagger UI",
-			"href": "https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/swagger-ui.html"
-		},{
-			"name": "KeyCloak",
-			"href": "https://[[HOST_SUBDOMAIN]]-8444-[[KATACODA_HOST]].environments.katacoda.com/"
-		}],
-
-		"uilayout": "terminal-iframe"
+			"name": "Dependency Check Rreport",
+			"href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/dependency-check-report.html"
+		}]
 	},
 	"backend": {
 		"imageid": "ubuntu",

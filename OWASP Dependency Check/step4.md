@@ -1,49 +1,18 @@
-### Setup Security Realm
+### Identifying False Positives and Irrelevant Depedencies
 
-Now lets set up the Keycloak secuirity realm. This will serve as the *authorization* and *resource* server for our application to authenticate against. The realm will use the OpenId Connect protocol.
+It is possible for this report to produce CVE's that do not match the dependency they are associated with. 
 
-1. Validate your Keyclaok server is up by navigating to https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com:8081/ in a browser (`Keycloak Dashboard`)
-    - It may take a minute for the container to start completly
-2.  Login to keycloak
-    - Click the "Administration Console" link
-    - Default Login for Keycloak
-      - Username: admin
-      - password: admin 
-    - Should now be on the "Master" realm settings
-3. Create todoRealm
-    - "Select realm" -> "Add Realm"
-      - Name: `todoRealm`{{copy}}
-      - Click Create
-4. Create Client. The *Authorization Server* used to connect to KeyCloak
-    - "Clients" -> "Create"
-      - Name: `openid-login-client`{{copy}}
-      - Client Protocol "openid-connect"
-      - Click Create
-    - Update client to allow for redirects from our localhost client application
-      - Valid Redirect URLs: https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/*
-      - Click save
-5. Create Roles
-    - Create "read_access" and "write_access" roles
-      - Roles -> Add Role
-        - Role Name: `read_access`{{copy}}
-        - Click Create
-        - Repeat for `write_access`{{copy}}
-6. Create Test User
-    - Users -> Add User
-      - Username: `todo-user`{{copy}}
-      - Email: forthenorth@thewall.org
-      - First Name: Jon
-      - Last Name: Snow
-      - Email Verified: On
-      - Click Save
-    - Add Roles
-      - `Role Mapping` tab
-        - Select `read_access` and `write_access` from the Available Roles
-          - Optional: Just add read access and come back and add write_access after TODO: Add specific step
-        - Add selected
-    - Add Credentials
-      - Credentials Tab
-        - Password/Password Confirmation: `password`
-        - Temporary: Off
-        - Click Reset Password
-        - Confirm
+This is normally easily identifiable by reading the description or viewing the version information inside the linked data source
+
+For example on our report if we examine `CVE-2018-10237` under `guava-20.0.jar`
+  - The description reads `Unbounded memory allocation in Google Guava 11.0 through 24.x before 24.1.1 allows` meaning this is **NOT** a false positive
+  - But if our version was 24.1.2 it could mean that there was human error when recording the CVE info
+  
+  
+Not every vulnerability is going to apply to our application and there are times when there is not a fix currently or we are unable to upgrade to a clean version of the dependency.
+  - In this case it is important that there is a plan in place for documenting these known vulnerabilities.
+
+View `CVE-2018-1258` for the spring framework dependency
+- Note that the description says this is only an issue when used in combination with Spring Security for authorization on methods.
+  - If we are not planning on using Spring Security or not using method authorization it is possible this vulnerability is irrelevant to us.
+  - **Important:** Again, if you do decide that a vulnerability should be ignore the reason should be justified and documented
