@@ -6,7 +6,7 @@ Let's suppress `CVE-2018-1000632` for `dom4j-1.6.1.jar`
   - View Report
   - Click the `suppress` button next to the link for the CVE `CVE-2018-1000632`
   - Since this is the first item we want to suppress click the `Complete XML Doc`
-  - Paste the contents into a new file named `owasp-suppressions.xml`{open} in the project's base directory
+  - Paste the contents into a new file named `owasp-suppressions.xml`{{open}} in the project's base directory
   - Add the following to the `dependency-check-maven` plugin inside your `pom.xml`
   
       `
