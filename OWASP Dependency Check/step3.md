@@ -8,7 +8,7 @@ View the CVE `CVE-2018-1000873`
 Find `jackson-databind`'s parent dependency by running `mvn dependency:tree | grep -B 3 jackson-databind`{{execute}}
 
 
-Add the following dependency to override the imported version of `jackson-databind`
+Add the following dependency to the `pom.xml`'s{{open}} depdency section to override the inherited version of `jackson-databind`
   `
   <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -16,12 +16,14 @@ Add the following dependency to override the imported version of `jackson-databi
       <version>2.11.1(or latest version)</version>
   </dependency>
   `{{copy}}
+  
   <sub> 2.11.1 is the latest version as of the creation of this lab. You should use the newest stable version currently out </sub>
   
 Update Report:
+
 `mvn verify
 cp target/dependency-check-report.html /var/www/html/
-`{execute}
+`{{execute}}
 
 Refresh Report: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/dependency-check-report.html
 
